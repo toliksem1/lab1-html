@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №1 - Варіант 1</title>
+</head>
+<body>
+
+    <header>
+        <h1>Лабораторна робота №1: Основи побудови HTML-документів</h1>
+        <p><b>Виконав:</b> студент групи КІУКІу-25-1 <i>Варіант 1</i></p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <h2>Зміст сторінки</h2>
+        <ul>
+            <li><a href="#section1">1. Формований текст (Теорема Ферма)</a></li>
+            <li><a href="#section2">2. Структура університету</a></li>
+            <li><a href="#section3">3. Таблиця курсів валют</a></li>
+            <li><a href="#section4">4. Форма голосування</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Основний контент -->
+    <main>
+        
+        <!-- 1. Формований текст -->
+        <section id="section1">
+            <h2>1. Формований текст</h2>
+            <p>
+                <b>Велика теорема Ферма</b> (або Остання теорема Ферма) стверджує, що:
+            </p>
+            <p>
+                Для будь-якого натурального числа <b>n&gt;2</b> рівняння <i>a<sup>n</sup> + b<sup>n</sup> = c<sup>n</sup></i> 
+                <b>не має рішень</b> при цілих ненульових числах a, b, c.
+            </p>
+            <p>
+                Доведення цієї теореми стало справжнім проривом &rarr; воно об'єднало різні розділи математики. 
+                У процесі доведення використовуються такі грецькі літери як &alpha;, &beta;, &gamma;. 
+                Для позначення коренів рівнянь також використовують індекси: x<sub>1</sub>, x<sub>2</sub>.
+            </p>
+            <p>
+                <img src="C:\Users\tolik\OneDrive\Documentos\Основи devops\Pierre_de_Fermat3.jpg" 
+                     alt="П'єр де Ферма" width="150" height="200">
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- 2. Багаторівневий список -->
+        <section id="section2">
+            <h2>2. Багаторівневий список: Структура університету</h2>
+            <ul>
+                <li><b>Факультет інформаційних технологій</b>
+                    <ul>
+                        <li>Кафедра програмної інженерії</li>
+                        <li>Кафедра комп'ютерних наук та штучного інтелекту</li>
+                        <li>Кафедра кібербезпеки</li>
+                    </ul>
+                </li>
+                <li><b>Факультет економіки та менеджменту</b>
+                    <ul>
+                        <li>Кафедра фінансів</li>
+                        <li>Кафедра менеджменту</li>
+                    </ul>
+                </li>
+                <li><b>Факультет іноземних мов</b>
+                    <ul>
+                        <li>Кафедра англійської філології</li>
+                        <li>Кафедра німецької філології</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- 3. Таблиця -->
+        <section id="section3">
+            <h2>3. Таблиця: Курс валют</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Валюта</th>
+                        <th>Код</th>
+                        <th>Курс в гривні (UAH)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Долар США</td>
+                        <td>USD</td>
+                        <td>41.50</td>
+                    </tr>
+                    <tr>
+                        <td>Євро</td>
+                        <td>EUR</td>
+                        <td>44.80</td>
+                    </tr>
+                    <tr>
+                        <td>Польський злотий</td>
+                        <td>PLN</td>
+                        <td>10.20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- 4. Форма -->
+        <section id="section4">
+            <h2>4. Форма голосування</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Голосування: Найкращий предмет семестру</legend>
+                    <p>
+                        <input type="radio" id="math" name="subject" value="math" checked>
+                        <label for="math">Вища математика</label><br>
+                        
+                        <input type="radio" id="web" name="subject" value="web">
+                        <label for="web">Веб-технології</label><br>
+                        
+                        <input type="radio" id="db" name="subject" value="db">
+                        <label for="db">Бази даних</label>
+                    </p>
+                    <p>
+                        <label for="username">Ваше ім'я:</label>
+                        <input type="text" id="username" name="username" placeholder="Введіть ім'я">
+                    </p>
+                    <p>
+                        <input type="checkbox" id="anon" name="anon">
+                        <label for="anon">Голосувати анонімно</label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Відправити голос">
+                        <input type="reset" value="Очистити">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Підвал -->
+    <footer>
+        <p>&copy; 2024 Лабораторна робота №1. Створено без використання CSS.</p>
+    </footer>
+
+</body>
+</html>
